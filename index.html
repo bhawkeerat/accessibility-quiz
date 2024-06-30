@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessibility Quiz</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <img src="./assets/th.jpg" alt="free code camp logo">
+     <h1 class="heading">HTML/CSS Quiz</h1>
+     <nav id="nav-bar">
+        <ul>
+            <li href="#info" accesskey="i">INFO</li>
+            <li href="#html" accesskey="html">HTML</li>
+            <li href="#css" accesskey="css">CSS</li>
+        </ul>
+     </nav>
+    </header>
+    <form method="POSt" >
+    <section role="region" aria-labelledby="info">
+    <h2 id="info">Student Info</h2>
+    <div class="info">
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name">
+    </div>
+    <div class="info">
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email">
+    </div>
+    <div class="info">
+        <label for="birthday"><abbr title="Date of Birth">D.O.B.</abbr>: </label>
+        <input type="date" name="birthday" id="birthday">
+    </div>
+    </section>
+    <section role="region" aria-labelledby="html">
+      <h2 id="html">HTML</h2>
+      <div class="html">
+        <p>Question #1</p>
+        <legend>The legend element represents a caption for the content of its parent fieldset element</legend>
+        <ul id="answer-list">
+            <li> <label for="q1">
+           <input type="radio" name="q1" id="q1-a1" value="true">True</label></li>
+           <li> <label for="q1">
+            <input type="radio" name="q1" id="q1-a2" value="false">False</label></li>
+        </ul> 
+    </div>
+      <div class="html">
+        <p>Question #2</p>
+        <legend>The legend element represents a caption for the content of its parent fieldset element</legend>
+        <ul id="answer-list">
+            <li><label for="q2">
+            <input type="radio" name="q2" id="q2-a1" value="true">True</label></li>
+            <li><label for="q2">
+            <input type="radio" name="q2" id="q2-a2" value="false"> False</label></li>
+        </ul>
+      </div>
+
+    </section>
+    <section role="region" aria-labelledby="css">
+     <h2 id="css">CSS</h2>
+     <div class="select">
+        <label for="selector">Can the CSS margin property accept negative values?
+        </label>
+        <select name="selector" id="selector">
+            <option value >Select an option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+     </div>
+     <div class="write">
+        <label for="textbox">Do you have any questions:</label>
+        <textarea placeholder="Who is flexbox....."></textarea>
+     </div>
+    </section>
+    <button value="send" id="btn">Send</button>
+</form>
+    <footer>
+     <address>
+        <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a><br>
+        San Francisco<br>
+        California<br>
+        USA<br>
+     </address>
+    </footer>
+</body>
+</html>
